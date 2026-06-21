@@ -1,0 +1,47 @@
+body {
+    margin: auto;
+    align-items: center;
+    padding: auto;
+    text-align: center;
+}
+
+.brand {
+  color: #1C7C54;
+  /* text-decoration: none; */
+  font-weight: bold;
+  font-size: 27px;
+  font-family: 'Rubik Maze';
+  text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    width: 600px;
+    justify-content: space-between;
+    padding: 0;              /* Removes default browser indentation */
+    margin: 0; 
+}
+
+nav ul li {
+  display: inline-block;
+  /* justify-content: space-between; */
+  /* margin-right: 15px; */
+}
+
+nav {
+    justify-content: space-between;
+    display: inline-flex;
+    background-color: azure;
+    width: 1400px;
+    padding: 8px;
+}
