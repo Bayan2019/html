@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <section style="text-align: left;">
+            <h2>Элементы формы</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Tell about yourself</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br />
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br />
+                    <label for="age">How old are you:</label>
+                    <input type="number" id="age" name="age"><br />
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required><br />
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" required><br />
+                    <label for="about">Tell about yourself:</label>
+                    <textarea id="about" name="about" rows="4" cols="50"></textarea><br />
+                    <label for="country">From which Country you are:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                    </select><br />
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>
