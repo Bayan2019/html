@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./hw05.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <h1>Селекторы</h1>
+        <section style="text-align: left;">
+            <h2>Работа с базовыми селекторами</h2> 
+            <ol>
+                <li>
+                    <p>Селектор по тегу (например, все абзацы должны иметь синий цвет текста).</p>
+                </li>
+                <li>
+                    <p>
+                        Селектор по классу (например, элементы списка с определённым классом должны быть жирными).
+                    </p>
+                    <ul>
+                        <li class="bold">oranges</li>
+                        <li>lemons</li>
+                        <li class="bold">grapefruits</li>
+                        <li>limes</li>
+                        <li>kiwis</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        Селектор по ID (например, заголовок с определённым ID должен быть красного цвета).
+                    </p>
+                    <h4 id="basic-selectors">Заголовок</h4>
+                </li>
+            </ol>
+        </section>
+        <section style="text-align: left;">
+            <h2>Приоритет селекторов</h2>
+            <ol>
+                <li>
+                    <p class="green">
+                        Создайте несколько конфликтующих стилей для одного элемента 
+                        с использованием селекторов тегов, классов и ID (классы важнее тегов).
+                    </p>
+                </li>
+                <li>
+                    <p class="green" id="orange">
+                        Покажите, какой стиль применится в итоге, объяснив принцип приоритета (ID важнее классов).
+                    </p>
+                </li>
+            </ol>
+            <p>
+                Если <code>!important</code> нет, браузер вычисляет «вес» селектора по системе баллов: 
+                от тысяч до единиц (1000 - 100 - 10 - 1). Чем больше вес, тем стиль важнее.
+            </p>
+
+            Специфичность оценивается по четырем разрядам:
+            <ol>
+                <li>1-0-0-0 — инлайновые стили в атрибуте <code>style</code>.</li>
+                <li>0-1-0-0 — идентификаторы (<code>#id</code>).</li>
+                <li>0-0-1-0 — классы (<code>.class</code>), атрибуты (<code>[type="text"]</code>) и псевдоклассы (<code>:hover</code>, <code>:focus</code>).</li>
+                <li>0-0-0-1 — теги (<code>div</code>, <code>p</code>, <code>span</code>) и псевдоэлементы (<code>::before</code>, <code>::after</code>).</li>
+            </ol>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>

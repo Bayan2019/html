@@ -1,0 +1,20 @@
+/* Селектор по тегу (например, все абзацы должны иметь синий цвет текста). */
+p {
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#basic-selectors {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+#orange {
+    color: orange;
+}
