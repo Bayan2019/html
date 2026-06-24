@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./hw06.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <h1>Свойства в CSS</h1>
+        <section style="text-align: left;">
+            <h2>Работа с текстовыми свойствами</h2> 
+
+            <p>
+                Стандарт CSS Custom Properties изменил CSS. 
+                Появились безумные возможности, о которых раньше мы могли только мечтать. 
+                Рассказываем, какие именно и почему новичкам стоит изучить их как можно быстрее. 
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <code>color</code> — измените цвет текста для заголовков
+                    </p>
+                    <h3>Что такое пользовательское свойство</h3>
+                </li>
+                <li>
+                    <p>
+                        <code>font-size</code> — задайте разный размер шрифта для абзацев.
+                    </p>    
+                    <p style="font-size: 12px;">
+                        Пользовательское свойство — это CSS-свойство, которое создал сам разработчик. 
+                        Браузер ничего не знает о таком свойстве, пока его не объявили.
+                        Объявление пользовательского свойства начинается с двойного дефиса, 
+                        после которого указывают название, ставят двоеточие и добавляют значение.
+                    </p>
+                    <p style="font-size: 21px;">
+                        Теперь браузер знает о нашем свойстве, но в чем его польза?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <code>text-align</code> — выровняйте текст по центру для одного из заголовков.
+                    </p>
+                    <h3 style="text-align: center;">Особенности пользовательских свойств</h3>
+                </li>
+                <li>
+                    <p>
+                        <code>font-weight</code> — сделайте один из абзацев жирным.
+                    </p>
+                    <p style="font-weight: bold;">
+                        Первая фишка — функция var. 
+                        С помощью этой функции мы можем сказать браузеру, 
+                        чтобы он взял значение из объявленного пользовательского свойства 
+                        и добавил его для встроенного свойства.
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Работа с фоновыми свойствами</h2>
+            <ul>
+                <li>
+                    <p><code>background-color</code> — задайте фоновый цвет для контейнера.</p>
+                    <div style="background-color: yellow;">
+                        <p>
+                            Чтобы браузер так сделал, разработчику нужно объявить встроенное свойство, 
+                            например, <code>color</code>, и добавить к нему в качестве значения функцию <code>var</code>, 
+                            в аргументе которой передать название пользовательского свойства.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <code>background-image</code> — вставьте фоновое изображение.
+                    </p>
+                    <div style="background-image: url(../images/BayanSap.png);">
+                        <p>
+                            Зачем изучать пользовательские свойства, если есть переменные в Sass и они полностью устраивают?
+                        </p>
+                        <p>
+                            Переменные в препроцессорах, таких как LESS и Sass, помогают организовать код, чтобы нам было проще поддерживать его. 
+                            Например, в следующем коде я использую переменную <code>$netologyBrandColor</code>, 
+                            в которой хранится основной цвет бренда.
+                        </p>
+                        <p>
+                            Исходя из примера, понятно, что после преобразования кода из Sass в CSS 
+                            на место переменных компилятор вставил их значения, 
+                            поэтому мы можем сказать, что Sass-переменных нет в браузере.
+                        </p>
+                        <p>
+                            Вторая фишка пользовательских свойств — они живут в браузере, поэтому мы можем изменять их прямо в нем. 
+                            Например, изменим значение пользовательского свойства <code>--netologyBrandColor</code> при наведении мыши на кнопку.
+                        </p>
+                        <p>
+                            Теперь, если у кнопки сработает состояние <code>hover</code>, 
+                            значения у свойств <code>border</code> 
+                            и <code>color</code> изменятся. 
+                            Именно из-за этой особенности пользовательские свойства и называют «живыми»: 
+                            они могут изменяться прямо в браузере, 
+                            и соответственно менять значения встроенных свойств, к которым они применяются.  
+                        </p>
+                        <p>
+                            Способность динамического изменения пользовательских свойства 
+                            можно сочетать с Sass-переменными или LESS-переменными.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Работа с отступами и рамками</h2>
+            <ul>
+                <li>
+                    <p>
+                        <code>border</code> — создайте рамку для блоков.
+                    </p>
+                    <div style="border: solid;">
+                        <h3>Пользовательские свойства и media-выражения</h3>
+                        <p>
+                            Еще одна возможность пользовательских свойств — их значения можно переключать с помощью медиазапросов.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p><code>padding</code> — добавьте внутренние отступы.</p>
+                    <div style="padding: 60px; border: dashed;">
+                        <p>
+                            Для примера создадим два пользовательских свойства: —mq и —textColor. 
+                            При помощи первого выведем название медиафункции на страницу, а второе нужно для переключения цвета. 
+                            На экранах с шириной до 768px текст будет пурпурным, а от 769px — красным.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p><code>margin</code> — добавьте внешние отступы между блоками.</p>
+                    <div style="margin: 60px; border: dashed;">
+                        <h3>Пользовательские свойства и функция <code>calc</code></h3>
+                        <p> CSS есть функция <code>calc</code>, с помощью которой можно выполнять арифметические операции. 
+                            Она также может работать и с пользовательскими свойствами.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Работа с размерами и отображением</h2>
+            <ul>
+                <li>
+                    <p><code>width</code> и <code>height</code> — задайте ширину и высоту для элементов.</p>
+                    <div style="width: 1000px; height: 100px; background-color: aqua;"></div>
+                </li>
+                <li>
+                    <p>
+                        <code>overflow</code> — установите управление содержимым, 
+                        если оно выходит за границы блока (например, <code>hidden</code>, <code>scroll</code>).
+                    </p>
+                    <div style="width: 1000px; height: 100px; background-color: aqua; overflow: scroll;">
+                        <h3>Пользовательские свойства и SVG</h3>
+                        <p>
+                            Еще одна возможность пользовательских свойств — с их помощью можно задать значение для таких SVG-свойств, 
+                            как <code>fill</code>, <code>stroke</code>, <code>stroke-width</code> и других. 
+                            Это можно сделать двумя способами.
+                        </p>
+                        <p>
+                            В первом способе будем использовать атрибуты <code>fill</code>, <code>stroke</code> и <code>stroke-width</code>, 
+                            к которым в качестве значения определим пользовательские свойства.
+                        </p>
+                        <p>
+                            Второй способ — убрать атрибуты их и заменить на CSS-свойства.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>
