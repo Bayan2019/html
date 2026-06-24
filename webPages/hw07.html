@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <h1>Единицы и цветовые модели в CSS</h1>
+        <section style="text-align: left;">
+            <h2>Работа с единицами измерения</h2>
+            <ul>
+                <li>
+                    <p>
+                        Используйте <code>px</code> для задания точных размеров элементов.
+                    </p>
+                    <div style="background-color: yellowgreen; width: 800px; height: 80px;">
+                        <code>
+                            background-color: yellowgreen;<br /> 
+                            width: 800px; <br /> 
+                            height: 80px;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        Примените <code>em</code> для задания относительных размеров шрифта внутри контейнера.
+                    </p>
+                    <div 
+                    style="background-color: yellowgreen; width: 800px; height: 150px; font-size: 17px; display: inline-flex;"
+                    >
+                        <div style="background-color:yellow; font-size: 1.7em; margin: 8px;">
+                            <code>
+                                background-color:yellow; <br />
+                                font-size: 1.5em; <br />
+                                margin: 8px;
+                            </code>
+                        </div>
+                        <code>
+                            background-color: yellowgreen;<br /> 
+                            width: 800px; <br /> 
+                            height: 150px; <br />
+                            font-size: 17px; <br /> 
+                            display: inline-flex;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>Используйте <code>rem</code> для задания размеров относительно корневого элемента (<code>html</code>).</p>
+                    <div style="background-color: yellowgreen; width: 50rem; height: 80px;">
+                        <code>
+                            background-color: yellowgreen;<br /> 
+                            width: 50rem; <br /> 
+                            height: 80px;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>Примените <code>%</code> для задания ширины контейнеров относительно их родителя.</p>
+                    <div 
+                    style="background-color: yellowgreen; width: 800px; height: 150px; font-size: 17px; display: inline-flex;"
+                    >
+                        <div style="background-color:yellow; margin: 8px; width: 30%;">
+                            <code>
+                                background-color:yellow; <br />
+                                margin: 8px;<br />
+                                width: 30%;
+                            </code>
+                        </div>
+                        <code>
+                            background-color: yellowgreen;<br /> 
+                            width: 800px; <br /> 
+                            height: 150px; <br />
+                            font-size: 17px; <br /> 
+                            display: inline-flex;
+                        </code>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Работа с цветовыми моделями</h2>
+            <ul>
+                <li>
+                    <p>
+                        Задайте цвет текста и фона с помощью шестнадцатеричной системы (<code>hex</code>)
+                    </p>
+                    <div style="background-color: #92FF92; width: 800px; height: 80px;">
+                        <code>
+                            background-color: #92FF92;<br /> 
+                            width: 800px; <br /> 
+                            height: 80px;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        Используйте модель <code>rgb</code> для задания цветов фона и текста.
+                    </p>
+                    <div style="background-color: rgb(146,255,146); width: 800px; height: 80px;">
+                        <code>
+                            background-color: rgb(146,255,146);<br /> 
+                            width: 800px; <br /> 
+                            height: 80px;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        Примените модель <code>rgba</code> для добавления прозрачности к цветам.
+                    </p>
+                    <div style="background-color: rgba(0,0,255, 0.3); width: 800px; height: 80px;">
+                        <code>
+                            background-color: rgba(0,0,255, 0.3);<br /> 
+                            width: 800px; <br /> 
+                            height: 80px;
+                        </code>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>
