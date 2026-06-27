@@ -1,0 +1,45 @@
+button {
+    background-color: blue;
+    color: white;
+}
+button:hover {
+    background-color: greenyellow;
+    color: green;
+}
+.task12:focus {
+    border: 2px green solid;
+    background-color: aquamarine;
+}
+
+.task21:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+.task22:last-child {
+    color: green;
+    font-weight: bold;
+}
+
+.href:hover {
+    background-color: green;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.task3:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+.task41:first-child:hover {
+    background-color: greenyellow;
+    font-weight: bold;
+    color: green;
+}
+
+.task42:last-of-type:focus {
+    background-color: greenyellow;
+    font-weight: bold;
+    color: green;
+    border: 2px blue solid;
+}

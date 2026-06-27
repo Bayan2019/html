@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+    <link rel="stylesheet" href="./hw09.css"
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <h1>Псевдоклассы в CSS</h1>
+        <section style="text-align: left;">
+            <h2>Псевдоклассы <code>hover</code> и <code>focus</code></h2>
+            <ul>
+                <li>
+                    <p>Измените цвет фона кнопки при наведении курсора мыши на нее с помощью псевдокласса <code>:hover</code>.</p>
+                    <button>Button</button>
+                </li>
+                <li>
+                    <p>Измените цвет границы поля ввода, когда оно находится в фокусе, с помощью псевдокласса <code>:focus</code>.</p>
+                    <input class="task12" type="text"/>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Псевдоклассы <code>first-child</code> и <code>last-child</code></h2>
+            <ul>
+                <li>
+                    <p>Используйте <code>:first-child</code>, чтобы изменить стиль первого элемента списка.</p>
+                    <ul>
+                        <li class="task21">Operator (by OpenAI)</li>
+                        <li class="task21">Claude</li>
+                        <li class="task21">Copilot (by Microsoft)</li>
+                        <li class="task21">Lindy</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p>
+                        Примените <code>:last-child</code>, чтобы изменить стиль последнего элемента списка.
+                    </p>
+                    <ul>
+                        <li class="task22">Devin AI</li>
+                        <li class="task22">Cursor</li>
+                        <li class="task22">Claude Code</li>
+                        <li class="task22">Blackbox AI</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Применение псевдоклассов к разным элементам</h2>
+            <ul>
+                <li>
+                    <p>Измените цвет ссылки при наведении на нее курсора.</p>
+                    <a class="href" href="https://en.wikipedia.org/wiki/AI_agent">ссылка</a>
+                </li>
+                <li>
+                    <p>Примените стили для изменения внешнего вида нечетных текстовых элементов внутри блока.</p>
+
+                    <div>
+                        <p class="task3">
+                            AI agents do not have a standard definition.[3][4][5] Common attributes of AI agents include goal-directed behavior, natural language interfaces, the capacity to use external tools, and the ability to perform multi-step tasks. Their control flow is frequently driven by large language models (LLMs). Agent systems may also include memory components, planning logic, tool interfaces, and orchestration software for coordinating agent components.
+                        </p>
+                        <p class="task3">
+                            A common application of AI agents is task automation: for example, booking travel plans based on a user's prompted request.
+                        </p>
+                        <p class="task3">Companies such as Google, Microsoft and Amazon Web Services have offered platforms for deploying pre-built AI agents.[10] Several protocols have been proposed for standardizing inter-agent communication, such as the Model Context Protocol, Gibberlink,[11] and many others. Some of these protocols are also used to connect agents to external applications.</p>
+                        <p class="task3">In December 2025, Linux Foundation announced the formation of the Agentic AI Foundation (AAIF), with the goal of ensuring that agentic AI evolves transparently and collaboratively.</p>
+                        <p class="task3">AI agents can be tracked back to research from the 1990s, with Harvard professor Milind Tambe noting that the definition of an AI agent was not clear at the time. Researcher Andrew Ng has been credited with spreading the term "agentic" to a wider audience in 2024.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Комбинация псевдоклассов</h2>
+            <ul>
+                <li>
+                    <p>Примените стили к элементам, которые являются первыми дочерними элементами, и изменяются при наведении курсора.</p>
+                    <div>
+                        <p class="task41">As of April 2025, per the Associated Press, there are few real-world applications of AI agents.</p>
+                        <p class="task41">The Information divided AI agents into seven archetypes: business-task agents, for acting within enterprise software; conversational agents, which act as chatbots for customer support; research agents, for querying and analyzing information (such as OpenAI Deep Research); analytics agents, for analyzing data to create reports; software developer or coding agents (such as Cursor); domain-specific agents, which include specific subject matter knowledge; and web browser agents (such as OpenAI Operator).</p>
+                        <p class="task41">In November 2025, The Wall Street Journal reported that few companies that deployed AI agents have received a return on investment.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Добавьте стили для элементов, которые находятся в фокусе и при этом являются последними дочерними элементами.</p>
+                    
+                        <input class="task42" type="text" placeholder="First Name" /> <br />
+                        <input class="task42" type="text" placeholder="Last Name" /> <br />
+                        <input class="task42" type="text" placeholder=".task42:last-of-type:focus" /> <br />
+                    
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>
