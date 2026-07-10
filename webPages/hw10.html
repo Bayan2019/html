@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../images/BayanSap.svg">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><span class='brand'>SAPAR</span></a>
+        <ul>
+            <li><a href="https://bayan2019.github.io/resume/">Resume</a></li>
+            <li><a href="./HomeWorksPage/index.html">Home Works</a></li>
+        </ul>
+    </nav>
+    <main style="margin: auto; padding-left: 50px;">
+        <h1>Flexbox</h1>
+        <section style="text-align: left;">
+            <h2>Свойство <code>display</code></h2>
+            Создайте 3 <code>div</code>-элемента и примените к ним следующие значения свойства <code>display</code>:
+            <ul>
+                <li>
+                    <p>Первый элемент — <code>block</code></p>
+                    <div style="display: block; background-color: aquamarine;">
+                        <code>
+                            display: block; <br /> 
+                            background-color: aquamarine;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>Второй элемент — <code>inline</code></p>
+                    <div style="display: inline; background-color: aquamarine;">
+                        <code>
+                            display: inline; <br /> 
+                            background-color: aquamarine;
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <p>Третий элемент — <code>flex</code></p>
+                    <div style="display: flex; background-color: aquamarine;">
+                        <code>
+                            display: flex; <br /> 
+                            background-color: aquamarine;
+                        </code>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Flex-контейнер</h2>
+            Создайте <code>div</code>-контейнер с несколькими дочерними элементами.
+            <div style="display: flex;">
+                <code>
+                    display: flex
+                </code>
+                <p style="background-color: greenyellow; margin: 8px;">
+                    <code>
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </p>
+                <p style="background-color: greenyellow; margin: 8px;">
+                    <code>
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </p>
+                <p style="background-color: greenyellow; margin: 8px;">
+                    <code>
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </p>
+            </div>
+            <p>
+                Примените к контейнеру <code>display: flex</code> и посмотрите, 
+                как элементы внутри него автоматически выстраиваются в одну строку.
+            </p>
+        </section>
+        <section style="text-align: left;">
+            <h2>Свойства <code>flex-direction</code>, <code>flex-wrap</code>, <code>flex-flow</code></h2>
+
+            <ul>
+                <li>
+                    <p>Примените <code>flex-direction: column</code>, чтобы расположить элементы в колонку.</p>
+
+                    <div style="display: flex; flex-direction: column;">
+                        <code>
+                            display: flex; <br />
+                            flex-direction: column;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        Примените <code>flex-wrap</code>, чтобы элементы переносились на новую строку при нехватке места.
+                    </p>
+                    <div style="display: flex; flex-direction: column; height: 150px; flex-wrap: wrap;">
+                        <code>
+                            display: flex; <br />
+                            flex-direction: column; <br />
+                            height: 150px; <br />
+                            flex-wrap: wrap;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p>Используйте сокращённое свойство <code>flex-flow</code> для комбинирования направлений и обёртывания.</p>
+
+                    <div style="display: flex; flex-flow: column wrap; height: 150px;">
+                        <code>
+                            display: flex; <br />
+                            flex-flow: column wrap; <br />
+                            height: 150px;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Выравнивание элементов</h2>
+            <ul>
+                <li>
+                    <p><code>justify-content</code> для горизонтального выравнивания элементов (например, по центру)</p>
+
+                    <div style="display: flex; flex-flow: column wrap; height: 200px; justify-content: center;">
+                        <code>
+                            display: flex; <br />
+                            flex-flow: column wrap; <br />
+                            height: 200px; <br />
+                            justify-content: center;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p> <code>align-items</code> для вертикального выравнивания элементов внутри контейнера.</p>
+                    <div style="display: flex; flex-flow: column wrap; height: 200px; align-items: center;">
+                        <code>
+                            display: flex; <br />
+                            flex-flow: column wrap; <br />
+                            height: 200px; <br />
+                            align-items: center;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <code>align-content</code> для управления выравниванием всех строк в flex-контейнере.
+                    </p>
+                    
+                    <div style="display: flex; flex-flow: column wrap; height: 200px; align-content: center;">
+                        <code>
+                            display: flex; <br />
+                            flex-flow: column wrap; <br />
+                            height: 200px; <br />
+                            align-content: center;
+                        </code>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                        <p style="background-color: greenyellow; margin: 8px;">
+                            <code>
+                                background-color: greenyellow; <br /> 
+                                margin: 8px;
+                            </code>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Свойства <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-basis</code> и сокращённое свойство <code>flex</code></h2>
+            <p>Создайте flex-контейнер с тремя элементами.</p>
+            <div style="display: flex; background-color: aqua; height: 150px;">
+                <div style="flex: 1 1 50px; background-color: greenyellow; margin: 8px;">
+                    <code>
+                        flex: 1 1 50px; <br /> 
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </div>
+                <div style="flex: 0 1 300px; background-color: greenyellow; margin: 8px;">
+                    <code>
+                        flex: 0 1 300px; <br /> 
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </div>
+                <div style="flex: 2 2 20px; background-color: greenyellow; margin: 8px;">
+                    <code>
+                        flex: 2 2 20px; <br /> 
+                        background-color: greenyellow; <br /> 
+                        margin: 8px;
+                    </code>
+                </div>
+            </div>
+        </section>
+        <section style="text-align: left;">
+            <h2>Практическое задание</h2>
+            <div style="display: flexbox; background-color: yellow;">
+                <div style="width: 50%; background-color: aquamarine; margin: 8px;">
+                    <code>
+                        width: 50%; <br /> 
+                        background-color: aquamarine; <br />
+                        margin: 8px;
+                    </code>
+                </div>
+                <div style="background-color: #9292FF; margin: 8px; flex-grow: 1;">
+                    <code>
+                        background-color: blue; <br /> 
+                        margin: 8px; <br />
+                        flex-grow: 1;
+                    </code>
+                </div>
+                <div style="width: 200px; background-color: aqua; margin: 8px;">
+                    <code>
+                       width: 200px; <br /> 
+                       background-color: aqua; <br />
+                       margin: 8px;
+                    </code>
+                </div>
+            </div>
+        </section>
+        <section style="text-align: left;">
+            <h2>Меню навигации с выравниванием по центру</h2>
+
+            <div 
+                style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; background-color: aquamarine; padding: 5px;"
+                >
+                <a href="https://bayan2019.github.io/resume/">Resume</a>
+                <a href="https://github.com/Bayan2019">Github</a>
+                <a href="https://www.linkedin.com/in/bayan-saparbayeva/">LinkedIn</a>
+            </div>
+        </section>
+        <section style="text-align: left;">
+            <h2>Галерея карточек</h2>
+            <div
+                style="display: flex; flex-wrap: wrap; align-content: space-around;"
+            >
+                <div style="flex: 0 0 30%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 40%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 20%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 30%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 40%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 20%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 30%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 40%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+                <div style="flex: 0 0 20%; margin: 8px; padding: 5px; background-color: #9292FF; color: yellow;">Item</div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2026 <span class="brand">SAPAR</span>. Built with precision.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none small">Help Center</a>
+            </div>
+        </div>
+    </footer>
+</body>

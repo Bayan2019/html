@@ -45,3 +45,9 @@ nav {
     width: 1400px;
     padding: 8px;
 }
+
+.bayan-card {
+    width: 30%;
+    height: 250px;
+    margin: 10px;
+}
