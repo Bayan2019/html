@@ -5,45 +5,68 @@ body {
     text-align: center;
 }
 
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    margin: 0 5px;
+    /* width: 1400px; */
+    /* padding: 8px; */
+    align-content: center;
+    align-items: center;
+}
+
+.main-header a {
+    text-decoration: none;
+}
+
+.main-header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.main-header > nav > ul {
+    margin: auto;
+    vertical-align: middle;
+}
+
+.main-header nav a {
+    text-decoration: none;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+}
+
 .brand {
   color: #1C7C54;
-  /* text-decoration: none; */
   font-weight: bold;
   font-size: 27px;
   font-family: 'Rubik Maze';
-  text-decoration: none;
 }
 
-nav a {
-    text-decoration: none;
+.main-header nav {
+    display: flex;
+    align-items: center;
 }
 
-nav ul li a {
-    text-decoration: none;
-}
-
-nav ul {
+.main-header nav ul {
     list-style-type: none;
-    text-decoration: none;
-    display: inline-flex;
-    width: 600px;
-    justify-content: space-between;
-    padding: 0;              /* Removes default browser indentation */
-    margin: 0; 
+    display: flex;
+    align-items: center;
 }
 
-nav ul li {
+.main-header nav ul li {
   display: inline-block;
   /* justify-content: space-between; */
-  /* margin-right: 15px; */
+  margin: 0 15px;
 }
 
-nav {
+.main-header nav {
     justify-content: space-between;
     display: inline-flex;
-    background-color: azure;
-    width: 1400px;
-    padding: 8px;
 }
 
 .bayan-card {
