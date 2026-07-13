@@ -3,6 +3,46 @@ body {
     align-items: center;
     padding: auto;
     text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header button {
+    cursor: pointer;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .main-header {
@@ -16,30 +56,6 @@ body {
     align-items: center;
 }
 
-.main-header a {
-    text-decoration: none;
-}
-
-.main-header > nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* align-content: center; */
-}
-
-.main-header > nav > ul {
-    margin: auto;
-    vertical-align: middle;
-}
-
-.main-header nav a {
-    text-decoration: none;
-}
-
-.main-header nav ul li a {
-    text-decoration: none;
-}
-
 .brand {
   color: #1C7C54;
   font-weight: bold;
@@ -47,26 +63,15 @@ body {
   font-family: 'Rubik Maze';
 }
 
-.main-header nav {
-    display: flex;
-    align-items: center;
-}
 
-.main-header nav ul {
-    list-style-type: none;
+.main-header > nav {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .main-header nav ul li {
-  display: inline-block;
-  /* justify-content: space-between; */
   margin: 0 15px;
-}
-
-.main-header nav {
-    justify-content: space-between;
-    display: inline-flex;
 }
 
 .bayan-card {
