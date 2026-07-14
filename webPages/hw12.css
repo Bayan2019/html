@@ -1,0 +1,107 @@
+main {
+    padding: 20px;
+}
+.card1 {
+    display: flex;
+    background-color: #000000;
+    border-radius: 32px;
+    align-items: center;
+    gap: 53px;
+    padding: 40px;
+}
+
+.card1 img {
+    border-radius: 6px;
+}
+
+.card1 div {
+    box-sizing: border-box;
+}
+
+.card1 .info-block {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    height: 465px;
+    justify-content: flex-end
+}
+
+.card1 .info-block .badge {
+    background-color: #191919;
+    width: fit-content;
+    height: 27px;
+    border-radius: 6px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.card1 .info-block .badge span {
+    letter-spacing: 0%;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Regular';
+    color: #FFFFFF;
+    display: grid;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.card1 h5 {
+    color: #118DA8;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Regular';
+    line-height: 27px;
+    letter-spacing: 0%;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+.card1 h2 {
+    width: 701px;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Regular';
+    font-weight: 400;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card1 p {
+    width: 757px;
+    color: #FFFFFFB2;
+    font-size: 22px;
+    font-family: 'Regular';
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.card1 button {
+    /* margin-top: auto; */
+    background-color: #118DA8;
+    border-radius: 6px;
+    border: none;
+    width: 208px;
+    height: 51px;
+    color: #FFFFFFB2;
+    font-size: 18px;
+    font-family: 'Regular';
+    font-weight: 400;
+    letter-spacing: 0%;
+    /* line-height: 27px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: auto;
+}
