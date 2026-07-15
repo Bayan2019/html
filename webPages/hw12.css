@@ -1,6 +1,9 @@
 main {
     padding: 20px;
+    height: fit-content;
+    background-color: yellow;
 }
+
 .card1 {
     display: flex;
     background-color: #000000;
@@ -104,4 +107,229 @@ main {
     vertical-align: middle;
     box-sizing: border-box;
     padding: auto;
+}
+
+.card234 {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.card2 {
+    background-color: #E1EDE6;
+    width: 290px;
+    height: 514px;
+    /* margin: 20px; */
+    padding: 20px 20px 30px 20px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card2 span {
+    color: #86928B;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.card2 h2 {
+    color: #2C2D35;
+    margin: 0px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.card2 p.material {
+    color: #2C2D35;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.card2 p.price {
+    color: #598D66;
+    margin-top: 30px;
+    /* margin-bottom: 0px; */
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.card2 button {
+    border: 1px solid #598D66;
+    height: 50px;
+    /* padding: 20px 60px; */
+    color: #598D66;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 100%;
+    background-color: transparent;
+}
+
+.card3 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 380px;
+    height: 582px;
+    line-height: 0;
+}
+
+.card3 img {
+    margin-bottom: 0px;
+}
+
+.card3 .info {
+    height: 337px;
+    margin-top: 0px;
+    border: 1px solid #F2F6FA;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+    padding: 50px 44px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card3 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card4 .text h2 {
+    color: #2E363E;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    margin: 0px;
+}
+
+.card3 .text .description {
+    color: #2E363E;
+    width: 240px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 0px;
+}
+
+.card3 .action {
+    padding: 0px;
+    width: 163px;
+    height: 118px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card3 .action .price {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0px;
+}
+
+.card3 .action button {
+    background-color: #FED84C;
+    height: 68px;
+    border-radius: 18px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 152%;
+    border: none;
+    margin: 0px;
+}
+
+.card4 {
+    width: 330px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #0C0B15;
+    color: #809FB8;
+    padding: 23px;
+    /* position: relative; */
+    box-sizing: border-box;
+
+    text-align: left;
+}
+
+.card4 .avatar-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0px;
+}
+
+.card4 .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #06152B;
+    border-radius: 50%;
+}
+
+.card4 i {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 28px;
+    /* height: 6px; */
+    cursor: pointer;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-size: 28px;
+    line-height: 0;
+    /* padding: 0px; */
+}
+
+.card4 h2 {
+    color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-family: 'Proxima Nova';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.card4 h4 {
+    margin-top: 24.37px;
+    margin-bottom: 0px;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+
+.card4 p {
+    margin-top: 25px;
+    width: 260px;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0%;
 }
